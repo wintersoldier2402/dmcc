@@ -88,16 +88,16 @@ class FormsUi extends Component {
 						<Card>
 							<CardBody>
 								<CardTitle>
-									<IntlMessages id="menu.batches" />
+									<IntlMessages id="Add Batch" />
 								</CardTitle>
 
-								<CardSubtitle>New: {this.state.batch.name}</CardSubtitle>
+								<CardSubtitle>New : {this.state.batch.name} Batch</CardSubtitle>
 
 								<AvForm className="av-tooltip mb-5 row">
 									<Colxx sm={6}>
 										<AvGroup>
 											<Label className="av-label" for="avexampleNameTooltip">
-												<IntlMessages id="batches.name" />
+												<IntlMessages id="Name of the Batch" />
 											</Label>
 											<AvInput
 												name="name" id={this.state.batch.name + this.state.batch._id}
@@ -115,7 +115,7 @@ class FormsUi extends Component {
 												className="av-label"
 												for="avexampleLastNameTooltip"
 											>
-												<IntlMessages id="batches.code" />
+												<IntlMessages id="Batch Code " />
 											</Label>
 											<AvInput
 												name="noOfStudents"
@@ -135,7 +135,7 @@ class FormsUi extends Component {
 												className="av-label"
 												for="avexampleLastNameTooltip"
 											>
-												<IntlMessages id="batches.code" />
+												<IntlMessages id="Batch Year" />
 											</Label>
 											<AvInput
 												name="department"
@@ -148,8 +148,8 @@ class FormsUi extends Component {
 											</AvFeedback>
 										</AvGroup>
 									</Colxx>
-
-									<Colxx sm={6}>
+				
+									{/*<Colxx sm={6}>
 										<AvGroup>
 											<Label
 												className="av-label"
@@ -208,6 +208,7 @@ class FormsUi extends Component {
 											</AvFeedback>
 										</AvGroup>
 									</Colxx>
+		*/}
 
 									<Colxx sm={12}>
 										<FormGroup>

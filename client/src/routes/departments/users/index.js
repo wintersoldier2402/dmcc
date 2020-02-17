@@ -187,7 +187,7 @@ class DataListLayout extends Component {
         return res.data
       }).then(data => {
         this.setState({
-          users: data,
+          users: data , 
           isLoading: true
         });
         this.createSelectData();
@@ -224,7 +224,7 @@ class DataListLayout extends Component {
       to={`${this.props.location.pathname}/new`}
       className="w-30 w-sm-100"
     >
-      <Button color="primary">
+      <Button color="primary" id="1">
         Add New
       </Button>
     </NavLink>
@@ -275,14 +275,14 @@ class DataListLayout extends Component {
                   />
                 </Colxx>
               </ModalBody>
-              <ModalFooter>
+             {/* <ModalFooter>
                 <Button color="primary" onClick={this.addOneUserToDepartment}>
                   Add Faculty
                 </Button>{" "}
                 <Button color="secondary" onClick={this.toggleAddUsers}>
                   Cancel
                 </Button>
-              </ModalFooter>
+             </ModalFooter>*/}
             </Modal>
 
             <Row>

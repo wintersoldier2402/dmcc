@@ -96,7 +96,7 @@ class DataListLayout extends Component {
               <Colxx xxs="12">
                 <div className="mb-2">
                   <h1>
-                    <IntlMessages id="menu.batches" />
+                  Batches of the department of {this.state.items.name}
                   </h1>
 
                   <div className="float-sm-right">
@@ -110,7 +110,7 @@ class DataListLayout extends Component {
                     </NavLink>
                   </div>
 
-                  <BreadcrumbItems match={this.props.match} />
+                 {/* <BreadcrumbItems match={this.props.match} />*/}
                 </div>
 
                 <Separator className="mb-5" />

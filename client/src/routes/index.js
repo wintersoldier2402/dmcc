@@ -36,7 +36,7 @@ import DepartmentBatchSession from './departments/batches/sessions'
 import DepartmentBatchSessionShow from './departments/batches/sessions/show'
 import DepartmentBatchSessionEdit from './departments/batches/sessions/edit'
 import FormsUi from './departments/users/new'
-
+import NewSubject from './departments/subjects/new'
 
 import { connect } from 'react-redux';
 class MainApp extends Component {
@@ -59,6 +59,7 @@ class MainApp extends Component {
 							<Route path={`${match.url}/departments/:id`} component={DepartmentShow} exact={true} />
 							<Route path={`${match.url}/departments/:id/edit`} component={DepartmentEdit} exact={true} />
 							<Route path={`${match.url}/departments/:id/users/new`} component={FormsUi} exact={true} />
+							<Route path={`${match.url}/departments/:id/subjects/new`} component={NewSubject} exact={true} />
 
 
 

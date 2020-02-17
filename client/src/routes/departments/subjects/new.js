@@ -27,7 +27,7 @@ import "rc-slider/assets/index.css";
 import "react-rater/lib/react-rater.css";
 import "react-fine-uploader/gallery/gallery.css";
 
-class FormsUi extends Component {
+class NewSubject extends Component {
 	constructor(props) {
 		super(props);
 
@@ -43,7 +43,7 @@ class FormsUi extends Component {
 		});
 	}
 
-	createDepartment1 = () => {
+	createDepartment = () => {
 		axios.post(this.state.apiUrl, {
 			name: this.state.name,
 			departmentCode: this.state.departmentCode
@@ -70,10 +70,10 @@ class FormsUi extends Component {
 						<Card>
 							<CardBody>
 								<CardTitle>
-									<IntlMessages id="menu.departments" />
+									<IntlMessages id="Subject" />
 								</CardTitle>
 
-								<CardSubtitle>Add Faculty</CardSubtitle>
+								<CardSubtitle>Add New Subject</CardSubtitle>
 
 								<AvForm className="av-tooltip mb-5 row">
 									<Colxx sm={6}>
@@ -115,7 +115,7 @@ class FormsUi extends Component {
 
 									<Colxx sm={12}>
 										<FormGroup>
-											<Button outline color="primary" onClick={this.createDepartment1}>
+											<Button outline color="primary" onClick={this.createDepartment}>
 												<IntlMessages id="forms.submit" />
 											</Button>
 										</FormGroup>
@@ -130,4 +130,4 @@ class FormsUi extends Component {
 	}
 }
 
-export default injectIntl(FormsUi)
+export default injectIntl(NewSubject)
